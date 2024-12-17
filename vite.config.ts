@@ -26,7 +26,11 @@ export default defineConfig(async () => {
         resolvers: [UniUIResolver({ exclude: 'UniKuAppRoot' })],
       }),
       // https://github.com/uni-helper/vite-plugin-uni-pages
-      UniPages(),
+      UniPages({
+        subPackages: [
+          'src/pages-sub',
+        ],
+      }),
       // https://github.com/uni-helper/vite-plugin-uni-manifest
       UniManifest(),
       // https://github.com/uni-helper/vite-plugin-uni-platform

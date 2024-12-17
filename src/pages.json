@@ -19,5 +19,15 @@
     "navigationBarTitleText": "Uni Creator",
     "navigationStyle": "custom"
   },
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "sub",
+          "type": "page"
+        }
+      ]
+    }
+  ]
 }

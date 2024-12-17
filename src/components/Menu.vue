@@ -24,6 +24,10 @@ function goto(url: NavigateToOptions['url'], data?: Record<string, any>) {
     <button class="w-full" type="primary" @click="goto('/pages/demo')">
       GO TO DEMO PAGE
     </button>
+
+    <button class="w-full" type="primary" @click="goto('/pages-sub/sub')">
+      GO TO SUB PAGE
+    </button>
   </view>
 
   <view>
